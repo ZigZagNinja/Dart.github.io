@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> template </title>
+   <script type="text/javascript">
+       var score1 = 301;
+       var score2 = 301;
+      function substitute() {
+          var value = document.getElementById('myTextBox').value;
+          var value2 = document.getElementById('ding').value;
+          var title = document.getElementById('score1');
+          var title2 = document.getElementById('score2');
+          score1 = score1 - value;
+          title.innerHTML = score1;
+          document.getElementById("myTextBox").value = "";
+          score2 = score2 - value2;
+          title2.innerHTML = score2;
+          document.getElementById("ding").value = "";
+          if(score1 === 0){
+              title.innerHTML = "Winner";
+          }
+          if(score2 === 0){
+              title2.innerHTML = "Winner";
+          }
+      }
+   </script>
+</head>
+<body>
+    <h1 id="score1"> 301 </h1>
+    <h1 id="score2"> 301 </h1>
+   <p>
+      <input type="text" id="myTextBox" />
+       <input type="text" id="ding" />
+      <input type="submit" id="Click Me!" onclick="substitute()"/>
+   </p>
+</body>
+</html>
