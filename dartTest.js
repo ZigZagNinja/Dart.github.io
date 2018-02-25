@@ -1,6 +1,14 @@
 var score1 = 301;
 var score2 = 301;
 
+function fuenf() {
+    score2 = 501;
+    score1 = 501;
+
+    document.getElementById('score1').innerHTML = 501;
+    document.getElementById('score2').innerHTML = 501;
+}
+
 
 function substitute() {
 
