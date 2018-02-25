@@ -1,5 +1,7 @@
 var score1 = 301;
 var score2 = 301;
+var bigPoints1 = 0;
+var bigPoints2 = 0;
 
 function fuenf() {
     score2 = 501;
@@ -36,7 +38,6 @@ function substitute() {
         score1 = 301;
         score2 = 301;
 
-        var bigPoints1 = 0;
         bigPoints1 = bigPoints1 +1;
         var bigPointsTitle = document.getElementById("bigPoints1");
         bigPointsTitle.innerHTML = bigPoints1;
@@ -45,7 +46,6 @@ function substitute() {
         score2 = 301;
         score1 = 301;
 
-        var bigPoints2 = 0;
         bigPoints2 = bigPoints2 +1;
         var bigPointsTitle2 = document.getElementById("bigPoints2");
         bigPointsTitle2.innerHTML = bigPoints2;
