@@ -25,10 +25,22 @@ function substitute() {
 
 
     if(score1 === 0){
-        title.innerHTML = "Winner";
+        score1 = 301;
+        score2 = 301;
+
+        var bigPoints1 = 0;
+        bigPoints1 = bigPoints1 +1;
+        var bigPointsTitle = document.getElementById("bigPoints1");
+        bigPointsTitle.innerHTML = bigPoints1;
     }
     if(score2 === 0){
-        title2.innerHTML = "Winner";
+        score2 = 301;
+        score1 = 301;
+
+        var bigPoints2 = 0;
+        bigPoints2 = bigPoints2 +1;
+        var bigPointsTitle2 = document.getElementById("bigPoints2");
+        bigPointsTitle2.innerHTML = bigPoints2;
     }
 
 }
