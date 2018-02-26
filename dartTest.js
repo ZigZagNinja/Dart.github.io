@@ -3,6 +3,13 @@ var score2 = 301;
 var bigPoints1 = 0;
 var bigPoints2 = 0;
 
+//creator Name placement
+/*document.getElementById('creatorName').style.position = "absolute";
+document.getElementById('creatorName').style.top = "100px";
+document.getElementById('creatorName').style.left = "100px" */
+
+
+//for 501
 function fuenf() {
     score2 = 501;
     score1 = 501;
@@ -12,6 +19,7 @@ function fuenf() {
 }
 
 
+//replaces values
 function substitute() {
 
     var value = document.getElementById('myTextBox').value;
@@ -50,5 +58,6 @@ function substitute() {
         var bigPointsTitle2 = document.getElementById("bigPoints2");
         bigPointsTitle2.innerHTML = bigPoints2;
     }
+
 
 }
