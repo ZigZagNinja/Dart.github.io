@@ -1,4 +1,4 @@
- function delay(ms) {
+  function delay(ms) {
         var cur_d = new Date();
         var cur_ticks = cur_d.getTime();
         var ms_passed = 0;
@@ -67,9 +67,7 @@ function substitute() {
 
         if(isNaN(document.getElementById('ding').value) == false){
 
-            if(score1 - document.getElementById('myTextBox').value > 0){
-
-                if(score1 - document.getElementById('ding').value > 0){
+            if(score1 - document.getElementById('myTextBox').value > 0  && score1 - document.getElementById('ding').value > 0){
 
                         pointArr[i] = document.getElementById('myTextBox').value;
                         pointArr2[i] = document.getElementById('ding').value;
@@ -113,8 +111,11 @@ function substitute() {
                                     console.log(pointArr);
                                     console.log(pointArr2);
 
-                }
 
+            }
+            else{
+                pointArr[i] = 0;
+                pointArr2[i] = 0;
             }
 
         }
