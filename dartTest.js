@@ -43,6 +43,8 @@ function undo(){
 function undo2(){
     document.getElementById("ding").value = "undo";
     substitute();
+    delay(200);
+    substitute();
 }
 
 
