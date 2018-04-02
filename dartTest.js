@@ -67,7 +67,7 @@ function substitute() {
 
         if(isNaN(document.getElementById('ding').value) == false){
 
-            if(score1 - document.getElementById('myTextBox').value > 0  && score1 - document.getElementById('ding').value > 0){
+            if(score1 - document.getElementById('myTextBox').value > 0  && score2 - document.getElementById('ding').value > 0){
 
                         pointArr[i] = document.getElementById('myTextBox').value;
                         pointArr2[i] = document.getElementById('ding').value;
